@@ -88,6 +88,7 @@ class BodyCare extends Component {
 
           <div className="menuImgBox">
             <img
+              alt="menuImg"
               className="menuImg"
               src="https://www.larocheposay.co.kr/upload/product/main/2020/04/20200429_1739030_209_210x210.png"
             />

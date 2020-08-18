@@ -16,7 +16,7 @@ class DetailLeft extends Component {
         return (
           <div>
             <img
-              alt="img22"
+              alt="sliderImg"
               src={`https://www.larocheposay.co.kr/${sliderImgs[imageUrl]}`}
             />
           </div>
@@ -38,7 +38,7 @@ class DetailLeft extends Component {
                 <div>
                   <img
                     className="detailSlider"
-                    alt="img"
+                    alt="slideImg"
                     src={`https://www.larocheposay.co.kr${imageUrl}`}
                   />
                 </div>

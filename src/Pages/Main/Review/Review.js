@@ -55,7 +55,7 @@ class Review extends Component {
                   <div className="itemBox">
                     <img
                       className="itemImg"
-                      alt=""
+                      alt="itemBox"
                       src="https://www.larocheposay.co.kr/upload/review/2018/11/20181102_1425041_063.jpg"
                     />
                     <div className="itemInfo">

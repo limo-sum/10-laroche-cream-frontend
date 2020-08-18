@@ -110,16 +110,19 @@ class DetailRight extends Component {
           <div className="nonList">
             <div className="originalPriceFrame">무첨가성분</div>
             <img
+              alt="nonImg"
               className="nonImg"
               src="https://www.larocheposay.co.kr/upload/subset/2018/08/20180806_1425019_023.png"
             />
             <div className="non">인공색소</div>
             <img
+              alt="nonImg"
               className="nonImg"
               src="https://www.larocheposay.co.kr/upload/subset/2018/08/20180806_1425036_024.png"
             />
             <div className="non">파라벤</div>
             <img
+              alt="nonImg"
               className="nonImg"
               src="https://www.larocheposay.co.kr/upload/subset/2018/08/20180806_1426033_028.png"
             />
@@ -174,6 +177,7 @@ class DetailRight extends Component {
           </div>
         </div>
         <img
+          alt="nonImg"
           className="RightBanner"
           src="https://www.larocheposay.co.kr/upload/event/2020/07/20200720_1432001_272.jpg"
         ></img>

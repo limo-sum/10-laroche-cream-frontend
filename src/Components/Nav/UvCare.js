@@ -91,6 +91,7 @@ class UvCare extends Component {
 
           <div className="menuImgBox">
             <img
+              alt="menuImg"
               className="menuImg"
               src="https://www.larocheposay.co.kr/upload/product/main/2020/07/20200720_1010034_243_210x210.png"
             />

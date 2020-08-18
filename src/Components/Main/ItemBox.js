@@ -108,7 +108,7 @@ class ItemBox extends Component {
             </div>
 
             <img
-              alt=""
+              alt="itemImg"
               src={`https://www.larocheposay.co.kr${images[0].slice(
                 1,
                 images[0].length - 1

@@ -7,9 +7,7 @@ class DetailTab extends Component {
   };
 
   componentDidMount() {
-    fetch("http://10.58.1.94:8000/core/tag/1")
-      .then((res) => res.json())
-      .then((res) => console.log("res >>> ", res));
+    fetch("http://10.58.1.94:8000/core/tag/1").then((res) => res.json());
   }
 
   // scrollTo = (ref) => {};
@@ -25,15 +23,24 @@ class DetailTab extends Component {
         </div>
         <div className="detailContents">
           <div className="banner">
-            <img src="https://www.larocheposay.co.kr/upload/product/main/2019/02/20200713_1810013_111.jpg" />
+            <img
+              alt="detailImg"
+              src="https://www.larocheposay.co.kr/upload/product/main/2019/02/20200713_1810013_111.jpg"
+            />
           </div>
 
           <div className="detailView">
-            <img src="https://www.larocheposay.co.kr/upload/editor//product/editor/201907/20190722101745072740.jpg" />
+            <img
+              alt="detailImg"
+              src="https://www.larocheposay.co.kr/upload/editor//product/editor/201907/20190722101745072740.jpg"
+            />
           </div>
         </div>
         <div className="detailMid">
-          <img src="https://www.larocheposay.co.kr/upload/product/main/2019/06/20200713_1810013_107.jpg" />
+          <img
+            alt="detailImg"
+            src="https://www.larocheposay.co.kr/upload/product/main/2019/06/20200713_1810013_107.jpg"
+          />
           <div className="detailMidBox">
             <p className="midBoxOne">유럽 NO.1</p>
             <p className="midBoxTwo"> - 트러플 케어 에센스 (미백 기능성)</p>
@@ -86,13 +93,19 @@ class DetailTab extends Component {
           <h3 class="mediaHead">미디어에 나온 라로슈포제</h3>
           <div className="mediaList">
             <div>
-              <img src="https://www.larocheposay.co.kr/upload/product/main/2018/08/20200713_1810013_110.jpg" />
+              <img
+                alt="detailImg"
+                src="https://www.larocheposay.co.kr/upload/product/main/2018/08/20200713_1810013_110.jpg"
+              />
               <div className="mediaText">
                 파우더룸 히트 아이템 선정 에센스 1위 <div>2018년 6월</div>
               </div>
             </div>
             <div>
-              <img src="https://www.larocheposay.co.kr/upload/product/main/2018/08/20200713_1810013_113.jpg" />
+              <img
+                alt="detailImg"
+                src="https://www.larocheposay.co.kr/upload/product/main/2018/08/20200713_1810013_113.jpg"
+              />
               <div className="mediaText">
                 국민일보 컨슈머리포트{" "}
                 <div>여름철 꼭 필요한 모공 에센스 1위</div>{" "}
@@ -100,7 +113,10 @@ class DetailTab extends Component {
               </div>
             </div>
             <div>
-              <img src="https://www.larocheposay.co.kr/upload/product/main/2018/08/20200713_1810013_117.jpg" />
+              <img
+                alt="detailImg"
+                src="https://www.larocheposay.co.kr/upload/product/main/2018/08/20200713_1810013_117.jpg"
+              />
               <div className="mediaText">
                 <div>얼루어 EDITOR’S PICK</div> <div> 2018년 6월</div>
               </div>

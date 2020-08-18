@@ -21,6 +21,7 @@ class ItemCard extends Component {
           </td>
           <td className="secondC">
             <img
+              alt="itemImg"
               src={`https://www.larocheposay.co.kr${firstImg.slice(
                 1,
                 firstImg.length - 1

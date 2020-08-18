@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import SignUpInfo from "./SignUpInfo";
 import SignUpOptionalInfo from "./SignUpOptionalInfo";
 import { signupAPI } from "../../config";
@@ -100,7 +100,6 @@ class SignUp extends Component {
         response.message === "DUPLICATED_ID"
           ? alert("사용할 수 없는 아이디 입니다.")
           : alert("사용 가능한 아이디 입니다.");
-        console.log(response.message);
       });
   };
 
@@ -110,11 +109,12 @@ class SignUp extends Component {
         <div className="content">
           <header>
             <Link to="/">
-            <img
-              className="logo"
-              src="https://www.larocheposay.co.kr/images/common/logo.png?1"
-              alt="logo_image"
-            /></Link>
+              <img
+                className="logo"
+                src="https://www.larocheposay.co.kr/images/common/logo.png?1"
+                alt="logo_image"
+              />
+            </Link>
           </header>
           <main className="join_content">
             <div className="step">

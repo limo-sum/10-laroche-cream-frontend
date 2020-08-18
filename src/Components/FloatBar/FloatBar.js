@@ -35,7 +35,6 @@ class FloatBar extends Component {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         this.setState({ userName: res.name });
       });
     fetch(cartAPI, {
@@ -46,7 +45,6 @@ class FloatBar extends Component {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         this.setState({ cartProducts: res.cart_list });
       });
     fetch(likeAPI, {

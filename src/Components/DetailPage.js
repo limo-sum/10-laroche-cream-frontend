@@ -33,7 +33,6 @@ class DetailPage extends Component {
   };
 
   render() {
-    console.log(this.state.data);
     return (
       <>
         <Nav />

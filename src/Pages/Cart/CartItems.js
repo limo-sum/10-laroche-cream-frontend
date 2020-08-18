@@ -13,7 +13,6 @@ class CartItems extends Component {
   }
 
   componentDidMount() {
-    console.log("dodo");
     this.showCartItems();
   }
 

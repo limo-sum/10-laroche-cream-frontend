@@ -12,12 +12,12 @@ class BrandStoryBanner extends Component {
               <li className="storyItem">
                 <img
                   className="storyImage"
-                  alt=""
+                  alt="storyImage"
                   src={`https://www.larocheposay.co.kr/images/main/campain_banner_v3_${item.id}.jpg`}
                 />
                 <img
                   className="storyHoverImage"
-                  alt=""
+                  alt="storyImage"
                   src={`https://www.larocheposay.co.kr/images/main/campain_banner_v3_${item.id}_on.png`}
                 />
               </li>

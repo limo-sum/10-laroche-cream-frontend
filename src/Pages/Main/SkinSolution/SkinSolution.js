@@ -54,7 +54,7 @@ class SkinSolution extends Component {
               return (
                 <div className="solutionItemBox">
                   <img
-                    alt=""
+                    alt="solutionImages"
                     className="solutionImages"
                     src={`https://www.larocheposay.co.kr/images/main/bg_branding0${item.id}.png`}
                   />

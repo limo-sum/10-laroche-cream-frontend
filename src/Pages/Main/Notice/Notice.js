@@ -18,7 +18,7 @@ class Notice extends Component {
                 <i>
                   <img
                     src="https://www.larocheposay.co.kr/images/common/ico_tel.png"
-                    alt=""
+                    alt="official"
                   />
                   080-844-0088
                 </i>
@@ -26,7 +26,7 @@ class Notice extends Component {
                 <i>
                   <img
                     src="https://www.larocheposay.co.kr/images/common/ico_tel.png"
-                    alt=""
+                    alt="phoneImg"
                   />
                   080-344-0088
                 </i>
@@ -52,7 +52,7 @@ class Notice extends Component {
           <a href="none">
             <img
               src="https://www.larocheposay.co.kr/upload/site/main/2018/09/20180903_1303026_001.jpg"
-              alt=" - 바로가기"
+              alt="바로가기"
             />
           </a>
         </div>
