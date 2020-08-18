@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slides from "../../../Components/Main/Slides";
-import { allAPI } from "../../../config";
+import { API } from "../../../config";
 import "./Suggestion.scss";
 
 class Suggestion extends Component {
@@ -16,7 +16,7 @@ class Suggestion extends Component {
   }
 
   showSuggestion = () => {
-    fetch(allAPI)
+    fetch(`${API}product/allitem`)
       .then((res) => res.json())
       .then((res) => {
         this.setState({

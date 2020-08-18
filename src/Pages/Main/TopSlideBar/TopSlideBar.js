@@ -40,8 +40,8 @@ class TopSlideBar extends Component {
     return (
       <div className="TopSlideBar">
         <Slider {...settings}>
-          {topSlideImg.map((item) => {
-            return <li className={item.name} />;
+          {topSlideImg.map((item, idx) => {
+            return <li className={item.name} key={idx} />;
           })}
         </Slider>
       </div>

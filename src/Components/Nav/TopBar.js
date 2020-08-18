@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { userAPI } from "../../config";
+import { API } from "../../config";
 import "./TopBar.scss";
 
 class TopBar extends Component {
@@ -11,7 +11,7 @@ class TopBar extends Component {
     };
   }
   componentDidMount() {
-    fetch(userAPI, {
+    fetch(`${API}user/userinfo`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Authorization"),
@@ -24,7 +24,7 @@ class TopBar extends Component {
   }
 
   signOut = () => {
-    fetch(userAPI, {
+    fetch(`${API}user/userinfo`, {
       method: "POST",
       headers: {
         Authorization: localStorage.removeItem("Authorization"),
@@ -39,7 +39,6 @@ class TopBar extends Component {
           <img
             alt="navLogo"
             className="navLogo"
-            onClick=""
             src="https://www.larocheposay.co.kr/images/common/logo.png?1"
           ></img>
         </Link>

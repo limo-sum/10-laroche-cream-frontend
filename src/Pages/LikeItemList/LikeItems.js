@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { likeAPI } from "../../config";
+import { API } from "../../config";
 import LikeItemBox from "../../Components/Main/LikeItemBox";
 import "./LikeItems.scss";
 
@@ -16,7 +16,7 @@ class LikeItems extends Component {
   }
 
   showLikeItems = () => {
-    fetch(likeAPI, {
+    fetch(`${API}user/likeproduct`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Authorization"),
@@ -46,6 +46,7 @@ class LikeItems extends Component {
             return (
               <LikeItemBox
                 id={idx}
+                key={idx}
                 item={item}
                 width={"narrow"}
                 hash={hash}

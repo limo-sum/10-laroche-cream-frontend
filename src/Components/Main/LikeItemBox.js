@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { cartAPI, likeAPI } from "../../config";
+import { API } from "../../config";
 import Modal from "./Modal";
 import "./ItemBox.scss";
 
@@ -15,7 +15,7 @@ class ItemBox extends Component {
   }
 
   handleLikeItem = (id) => {
-    fetch(likeAPI, {
+    fetch(`${API}user/likeproduct`, {
       method: "POST",
       headers: {
         Authorization: localStorage.getItem("Authorization"),
@@ -25,7 +25,7 @@ class ItemBox extends Component {
   };
 
   handleCartItem = (id) => {
-    fetch(cartAPI, {
+    fetch(`${API}user/cartproduct`, {
       method: "POST",
       headers: {
         Authorization: localStorage.getItem("Authorization"),

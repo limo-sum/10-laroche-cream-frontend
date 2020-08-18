@@ -49,9 +49,9 @@ class Review extends Component {
 
         <div className="reviewList">
           <Slider {...settings}>
-            {reviewData.map((item) => {
+            {reviewData.map((item, idx) => {
               return (
-                <div className="itemFrame">
+                <div className="itemFrame" key={idx}>
                   <div className="itemBox">
                     <img
                       className="itemImg"

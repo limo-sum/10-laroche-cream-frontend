@@ -5,7 +5,7 @@ import DetailRight from "./DetailPage/DetailPageRight/DetailRight";
 import DetailTab from "./DetailTab/DetailTab";
 import DetailSlider from "./DetailSlider/DetailSlider";
 import Footer from "../Components/Footer/Footer";
-import { detailAPI } from "../config";
+import { API } from "../config";
 import "./DetailPage.scss";
 import Categories from "../Pages/ProductList/Categories";
 import FloatBar from "./FloatBar/FloatBar";
@@ -24,7 +24,7 @@ class DetailPage extends Component {
 
   getData = () => {
     const apiId = this.props.match.params.id;
-    fetch(`${detailAPI}`, {
+    fetch(`${API}product/detail`, {
       method: "POST",
       body: JSON.stringify({ id: apiId }),
     })

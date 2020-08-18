@@ -141,9 +141,9 @@ class SignUpOptionalInfo extends Component {
           <li>
             <h4>피부타입</h4>
             <div className="radio_wrap_skin_type">
-              {typeTable.map((el) => {
+              {typeTable.map((el, idx) => {
                 return (
-                  <span className="radiocss">
+                  <span className="radiocss" key={idx}>
                     <input
                       type="radio"
                       onClick={inputHandler}
@@ -165,9 +165,9 @@ class SignUpOptionalInfo extends Component {
               <span>(최대 3개 선택)</span>
             </h4>
             <div className="check_box_skin_problem">
-              {troubleTable.map((el) => {
+              {troubleTable.map((el, idx) => {
                 return (
-                  <span className="checkcss">
+                  <span className="checkcss" key={idx}>
                     <input
                       type="checkbox"
                       onClick={handleCheckbox}
@@ -190,9 +190,10 @@ class SignUpOptionalInfo extends Component {
               <span>(5점 척도)</span>
             </h4>
             <div className="radio_wrap_sensitivity">
-              {sensitivity.map((el) => {
+              {sensitivity.map((el, idx) => {
                 return (
                   <div
+                    key={idx}
                     className={
                       el.sens === this.props.sensitivity
                         ? "selectedRadioCss"

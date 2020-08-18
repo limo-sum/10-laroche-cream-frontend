@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ItemBox from "../../Components/Main/ItemBox";
-import { allAPI } from "../../config";
+import { API } from "../../config";
 import "./ItemList.scss";
 
 class ItemList extends Component {
@@ -16,7 +16,7 @@ class ItemList extends Component {
   }
 
   showItemList = () => {
-    fetch(allAPI)
+    fetch(`${API}product/allitem`)
       .then((res) => res.json())
       .then((res) => {
         this.setState({

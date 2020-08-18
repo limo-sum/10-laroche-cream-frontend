@@ -50,9 +50,9 @@ class SkinSolution extends Component {
         </h1>
         <div className="solutionList">
           <Slider {...settings}>
-            {skinSolution.map((item) => {
+            {skinSolution.map((item, idx) => {
               return (
-                <div className="solutionItemBox">
+                <div className="solutionItemBox" key={idx}>
                   <img
                     alt="solutionImages"
                     className="solutionImages"

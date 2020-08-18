@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import SignUpInfo from "./SignUpInfo";
 import SignUpOptionalInfo from "./SignUpOptionalInfo";
-import { signupAPI } from "../../config";
-import { accountcheckAPI } from "../../config";
+import { API } from "../../config";
 import "./SignUp.scss";
 
 class SignUp extends Component {
@@ -67,7 +66,7 @@ class SignUp extends Component {
       skinTrouble,
       skinSensitivity,
     } = this.state;
-    fetch(signupAPI, {
+    fetch(`${API}user/signup`, {
       method: "POST",
       body: JSON.stringify({
         account: account,
@@ -89,7 +88,7 @@ class SignUp extends Component {
   };
 
   checkID = () => {
-    fetch(accountcheckAPI, {
+    fetch(`${API}user/accountcheck`, {
       method: "POST",
       body: JSON.stringify({
         account: this.state.account,

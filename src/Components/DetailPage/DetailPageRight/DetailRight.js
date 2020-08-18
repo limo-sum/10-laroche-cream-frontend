@@ -34,8 +34,12 @@ class DetailRight extends Component {
         <div className="infoTop">
           <div className="hashTags">
             {rightData &&
-              splitHash.map((res) => {
-                return <div className="hashTag">{res}</div>;
+              splitHash.map((res, idx) => {
+                return (
+                  <div className="hashTag" key={idx}>
+                    {res}
+                  </div>
+                );
               })}
           </div>
           <div className="tit">

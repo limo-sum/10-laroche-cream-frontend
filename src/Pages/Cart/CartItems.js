@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ItemCard from "./ItemCard";
-import { userAPI, cartAPI } from "../../config";
+import { API } from "../../config";
 import "./CartItems.scss";
 
 class CartItems extends Component {
@@ -17,7 +17,7 @@ class CartItems extends Component {
   }
 
   showCartItems = () => {
-    fetch(userAPI, {
+    fetch(`${API}user/userinfo`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Authorization"),
@@ -28,7 +28,7 @@ class CartItems extends Component {
         this.setState({ userName: res.name });
       });
 
-    fetch(cartAPI, {
+    fetch(`${API}user/cartproduct`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Authorization"),
@@ -156,6 +156,7 @@ class CartItems extends Component {
             return (
               <ItemCard
                 item={item}
+                key={idx}
                 id={id}
                 name={name}
                 price={priceNum}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { allAPI } from "../../../config";
+import { API } from "../../../config";
 import Slides from "../../../Components/Main/Slides";
 import "./Discount.scss";
 
@@ -16,7 +16,7 @@ class Discount extends Component {
   }
 
   showDiscount = () => {
-    fetch(allAPI)
+    fetch(`${API}product/allitem`)
       .then((res) => res.json())
       .then((res) => {
         this.setState({

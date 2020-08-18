@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { allAPI } from "../../../config";
+import { API } from "../../../config";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./BestSeller.scss";
@@ -19,7 +19,7 @@ class BestSeller extends Component {
   }
 
   showBestSeller = () => {
-    fetch(allAPI)
+    fetch(`${API}product/allitem`)
       .then((res) => res.json())
       .then((res) => {
         this.setState({

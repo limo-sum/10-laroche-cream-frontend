@@ -7,9 +7,9 @@ class BrandStoryBanner extends Component {
     return (
       <div className="BrandStoryBanner">
         <ul className="brandStoryFrame">
-          {storyBox.map((item) => {
+          {storyBox.map((item, idx) => {
             return (
-              <li className="storyItem">
+              <li className="storyItem" key={idx}>
                 <img
                   className="storyImage"
                   alt="storyImage"

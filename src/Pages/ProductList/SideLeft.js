@@ -37,15 +37,15 @@ class SideLeft extends Component {
       <div className="SideLeft">
         <div className="sideCateTitle">FACE</div>
         <Accordion>
-          {sideBarMenu.map((category) => {
+          {sideBarMenu.map((category, idx) => {
             return (
-              <AccordionItem>
+              <AccordionItem key={idx}>
                 <AccordionItemHeading>
                   <AccordionItemButton>{category.title}</AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                  {category.list.map((el) => {
-                    return <li>- {el}</li>;
+                  {category.list.map((el, idx) => {
+                    return <li key={idx}>- {el}</li>;
                   })}
                 </AccordionItemPanel>
               </AccordionItem>
@@ -58,9 +58,9 @@ class SideLeft extends Component {
         </div>
         <ul className="sideCateList">
           <div className="filterTitle">사용 단계 별</div>
-          {stage.map((item) => {
+          {stage.map((item, idx) => {
             return (
-              <label className="filter">
+              <label className="filter" key={idx}>
                 <input type="checkbox" id="cleansing" />
                 {item}
               </label>

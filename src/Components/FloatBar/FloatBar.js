@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { cartAPI, likeAPI, userAPI } from "../../config";
+import { API } from "../../config";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,7 +27,7 @@ class FloatBar extends Component {
           floatProducts: res.data,
         });
       });
-    fetch(userAPI, {
+    fetch(`${API}user/userinfo`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Authorization"),
@@ -37,7 +37,7 @@ class FloatBar extends Component {
       .then((res) => {
         this.setState({ userName: res.name });
       });
-    fetch(cartAPI, {
+    fetch(`${API}user/cartproduct`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Authorization"),
@@ -47,7 +47,7 @@ class FloatBar extends Component {
       .then((res) => {
         this.setState({ cartProducts: res.cart_list });
       });
-    fetch(likeAPI, {
+    fetch(`${API}user/likeproduct`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("Authorization"),

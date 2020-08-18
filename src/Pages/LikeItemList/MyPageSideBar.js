@@ -43,8 +43,8 @@ class MyPageSideBar extends Component {
                   <AccordionItemButton>{category.title}</AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                  {category.list.map((el) => {
-                    return <li>- {el}</li>;
+                  {category.list.map((el, idx) => {
+                    return <li key={idx}>- {el}</li>;
                   })}
                 </AccordionItemPanel>
               </AccordionItem>

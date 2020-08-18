@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ItemBox from "../../../Components/Main/ItemBox";
-import { allAPI } from "../../../config";
+import { API } from "../../../config";
 import "./OnlynHot.scss";
 
 class OnlynHot extends Component {
@@ -17,7 +17,7 @@ class OnlynHot extends Component {
   }
 
   showOnlynHot = () => {
-    fetch(allAPI)
+    fetch(`${API}product/allitem`)
       .then((res) => res.json())
       .then((res) =>
         this.setState({

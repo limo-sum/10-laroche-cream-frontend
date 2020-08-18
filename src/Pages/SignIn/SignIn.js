@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import MemberSignIn from "./MemberSignIn";
 import NonMemberSignIn from "./NonMemberSignIn";
-import { signinAPI } from "../../config";
+import { API } from "../../config";
 import "./SignIn.scss";
 
 class SignIn extends Component {
@@ -24,7 +24,7 @@ class SignIn extends Component {
 
   handleLoginBtn = () => {
     const { account, password } = this.state;
-    fetch(signinAPI, {
+    fetch(`${API}user/signin`, {
       method: "POST",
       body: JSON.stringify({
         account,
